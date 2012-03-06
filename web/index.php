@@ -1,17 +1,25 @@
 <?php
-require '../vendor/Slim/Slim.php';
-require '../vendor/TwigView.php';
+namespace Joindin;
 
-TwigView::$twigDirectory = realpath(__DIR__.'/../vendor/Twig/lib/Twig');
+// include dependencies
+require '../Vendor/Slim/Slim.php';
+require '../Vendor/TwigView.php';
 
-$app = new Slim(array(
+// include controllers
+require('../Controller/Event.php');
+
+// initialize Slim
+$app = new \Slim(array(
     'mode' => 'development',
-    'view' => new TwigView()
+    'view' => new \TwigView()
 ));
 
-$app->view()->setTemplatesDirectory('../templates');
-$app->get('/', function () use ($app) {
-    echo $app->render('events/hot.twig.html');
-});
+// set Twig base folder and view folder
+\TwigView::$twigDirectory = realpath(__DIR__ . '/../Vendor/Twig/lib/Twig');
+$app->view()->setTemplatesDirectory('../View');
 
+// register routes
+new Controller\Event($app);
+
+// execute application
 $app->run();

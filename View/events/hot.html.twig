@@ -1,4 +1,4 @@
-{% extends '../layout.html.twig' %}
+{% extends '/layout.html.twig' %}
 
 {% block body %}
 <div class="box">
@@ -9,6 +9,35 @@
 <div class="box">
     <h2 class="h1 icon-event">Hot Events
         <a class="more" href="/event/hot">More &raquo;</a></h2>
+{% for event in events %}
+    <div class="row row-event">
+        <div class="img">
+            <div class="frame">
+                <a href="{{ event.website_uri }}">
+                    <img src="http://joind.in/inc/img/event_icons/{{ event.icon }}" alt="{{ event.name }}" height="90" width="90" />
+                </a>
+            </div>
+        </div>
+        <div class="text">
+            <h3><a href="{{ event.website_uri }}">{{ event.name }}</a></h3>
+
+            <p class="info"><strong>{{ event.start_date }}</strong> -
+                <strong>{{ event.end_date }}</strong> at
+                <strong>---</strong>
+            </p>
+
+            <div class="desc"><p>{{ event.description }}</p></div>
+            <p class="opts">
+                <a href="{{ event.website_uri}}/comments">?</a> |
+                <strong><span class="event-attend-count-782">?</span> attended</strong> |
+            </p>
+
+            <div class="desc" style="padding-top:6px"></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+{% endfor %}
+
 
     <div class="row row-event">
         <div class="img">
@@ -40,6 +69,8 @@
         </div>
         <div class="clear"></div>
     </div>
+
+
     <div class="row row-event">
         <div class="img">
             <div class="frame">
@@ -423,32 +454,4 @@
                     <a href="/event/callforpapers">more...</a></div>
             </div>
         </div>
-    </div>
-</div>
-<div class="clear"></div>
-</div>
-</div>
-
-<div id="ftr">
-    <div class="container_12">
-        <div class="grid_6">
-            <a href="/event">Events</a> | <a href="/talk">Talks</a> |
-            <a href="/search">Search</a> | <a href="/about">About</a> |
-            <a href="/help">Help</a> | <a href="/blog">Blog</a> |
-            <a href="/api">API</a> | <a href="/about/contact">Contact</a>
-        </div>
-        <div class="grid_6 rgt">
-            <a href="http://www.combell.com/en/servers/cloud-server" title="Cloud servers & cloud hosting">Cloud server</a>
-            <a href="http://www.combell.com/en" title="Hosting & webhosting">hosting</a> by Combell
-            <a href="http://www.combell.com/en" title="Cloud hosting Combell"><img src="/inc/img/LOGO-COMBELL_small.gif" border="0" style="vertical-align:text-bottom;" alt="Combell" height="22" width="80" /></a> &nbsp;&nbsp;&nbsp;&nbsp; &copy; Joind.in 2012
-        </div>
-        <div class="clear"></div>
-    </div>
-</div>
-
-<div id="jQueryUImessageBox" style="display:none"></div>
-
-<?php require '../google-analytics.php'; ?>
-
-</body>
-</html>
+{% endblock %}
