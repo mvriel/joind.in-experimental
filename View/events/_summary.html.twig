@@ -1,0 +1,20 @@
+<div class="row event-summary">
+    <div class="span1">
+        <a href="{{ event.website_uri }}">
+            <img src="{{ event.icon }}" alt="{{ event.name }}" />
+        </a>
+    </div>
+    <div class="span3">
+        <h3><a href="{{ event.website_uri }}">{{ event.name }}</a></h3>
+
+        <p class="info"><strong>{{ event.start_date }}</strong> uptil
+            <strong>{{ event.end_date }}</strong>
+        </p>
+
+        <div class="links">
+            <a href="">Schedule</a>
+            <a href="">Comments</a>
+            <a href="">Attendees (100)</a>
+        </div>
+    </div>
+</div>
