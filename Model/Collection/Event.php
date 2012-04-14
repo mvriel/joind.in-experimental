@@ -7,12 +7,12 @@ class Event
     {
         $events = (array)json_decode(
             file_get_contents(
-                '../Cache/events.'.$filter.'.json'
-//                'http://api.joind.in/v2/events?format=json&filter='.$filter.'&resultsperpage='.$limit.'&page='.$page
+//                '../Cache/events.'.$filter.'.json'
+                'http://api.joind.in/v2.1/events?format=json&filter='.$filter.'&resultsperpage='.$limit.'&page='.$page
             )
         );
-        $meta = array_pop($events);
+		$meta = array_pop($events);
 
-        return $events;
+        return $events['events'];
     }
 }
