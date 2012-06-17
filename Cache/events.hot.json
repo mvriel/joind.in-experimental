@@ -1,1 +1,96 @@
-{"0":{"name":"PHPBenelux Conference 2012","start_date":"2012-01-27T00:00:00+01:00","end_date":"2012-01-28T23:59:59+01:00","description":"The conference and tutorials will take place at the Best Western Hotel Ter Elst in Antwerp (Belgium). Friday morning January 27th we have a set of tutorials. The conference is spread over 2 days: Friday afternoon (after the tutorials) and Saturday. Tutorials as well as the conference itself are spread over several parallel tracks.\n\nOn Friday evening, we\u2019re having the conference social. This will include drinks and bowling as we managed to reserve the entire bowling alley.","href":"http:\/\/conference.phpbenelux.eu","attendee_count":121,"icon":"phpbnl2012-small.png","uri":"http:\/\/api.joind.in\/v2\/events\/782","verbose_uri":"http:\/\/api.joind.in\/v2\/events\/782?verbose=yes","comments_uri":"http:\/\/api.joind.in\/v2\/events\/782\/comments","talks_uri":"http:\/\/api.joind.in\/v2\/events\/782\/talks","website_uri":"http:\/\/joind.in\/event\/view\/782"},"1":{"name":"ConFoo 2012","start_date":"2012-02-27T00:00:00-05:00","end_date":"2012-03-02T23:59:59-05:00","description":"PHP Qu\u00e9bec, Montr\u00e9al-Python, Montreal.rb, Montreal Jug, W3Qc, OWASP Montr\u00e9al, Android Montreal, are proud to announce the third edition of the ConFoo Conference. From February 29th to March 2nd, 2012, international experts in Java, .Net, PHP, Python and Ruby will present solutions for developers and project managers the prestigious Hilton Bonaventure Hotel, located downtown Montr\u00e9al.\n","href":"http:\/\/confoo.ca\/","attendee_count":121,"icon":"logo_confoo_joindin2.gif","uri":"http:\/\/api.joind.in\/v2\/events\/773","verbose_uri":"http:\/\/api.joind.in\/v2\/events\/773?verbose=yes","comments_uri":"http:\/\/api.joind.in\/v2\/events\/773\/comments","talks_uri":"http:\/\/api.joind.in\/v2\/events\/773\/talks","website_uri":"http:\/\/joind.in\/event\/view\/773"},"2":{"name":"PHP UK Conference 2012","start_date":"2012-02-24T00:00:00+00:00","end_date":"2012-02-25T23:59:59+00:00","description":"PHP London are pleased to announce their 7th annual UK PHP conference, building on the success of previous events by expanding to a double-day event, to accommodate the continual growth of the PHP community and PHP development industry.\n\n It takes place at the modern Business Design Centre in London's bustling Islington area, close to Kings Cross and Euston and just two minutes walk from Angel underground station. There are 16 one hour sessions that comprise the 3 track schedule for the day. As usual we've arranged social events for both the evening before and straight after each day of the event - the former being free to anyone to come along. The registration price also includes a buffet lunch and dessert, refreshments throughout each day, cloakroom facilities, wifi, countless networking opportunities, and a raffle.","href":"http:\/\/www.phpconference.co.uk\/","attendee_count":97,"icon":"PHPUKConference2012.png","uri":"http:\/\/api.joind.in\/v2\/events\/824","verbose_uri":"http:\/\/api.joind.in\/v2\/events\/824?verbose=yes","comments_uri":"http:\/\/api.joind.in\/v2\/events\/824\/comments","talks_uri":"http:\/\/api.joind.in\/v2\/events\/824\/talks","website_uri":"http:\/\/joind.in\/event\/view\/824"},"3":{"name":"SACRAO 2012","start_date":"2012-02-11T00:00:00-05:00","end_date":"2012-02-15T23:59:59-05:00","description":"SACRAO 2012 Annual Conference - in Northern Kentucky! SACRAO has tracks and sessions for Admissions professionals, Registrar professionals, and other student affairs professionals.","href":"http:\/\/goo.gl\/5Bb0b","attendee_count":85,"icon":"SACRAO_Logo.JPG","uri":"http:\/\/api.joind.in\/v2\/events\/667","verbose_uri":"http:\/\/api.joind.in\/v2\/events\/667?verbose=yes","comments_uri":"http:\/\/api.joind.in\/v2\/events\/667\/comments","talks_uri":"http:\/\/api.joind.in\/v2\/events\/667\/talks","website_uri":"http:\/\/joind.in\/event\/view\/667"},"4":{"name":"Day Camp 4 Developers #4: Business 101 for Developers","start_date":"2012-03-03T00:00:00-06:00","end_date":"2012-03-03T23:59:59-06:00","description":"Whether you are a freelancer, a moonlighter or a dedicated member of a team, your business skills come into play every day. Day Camp 4 Developers #4: Business 101 will help you hone those skills. Our 6 speakers will present from their real-life experiences as they help you sharpen your existing skills as well and learn new ones.\n","href":"","attendee_count":23,"icon":"dc4d_joindin2.jpg","uri":"http:\/\/api.joind.in\/v2\/events\/899","verbose_uri":"http:\/\/api.joind.in\/v2\/events\/899?verbose=yes","comments_uri":"http:\/\/api.joind.in\/v2\/events\/899\/comments","talks_uri":"http:\/\/api.joind.in\/v2\/events\/899\/talks","website_uri":"http:\/\/joind.in\/event\/view\/899"},"5":{"name":"Dallas PHP User Group Meeting - February 2012","start_date":"2012-02-21T00:00:00-06:00","end_date":"2012-02-21T23:59:59-06:00","description":"This month we're going to have a special guest coming in from out of town - Paul Jones will be presenting his talk \"Solving the N+1 Problem; or, A Stitch In Time Saves Nine\". Here's the summary:\n\n-----------\n\nWhen dealing with databases, developers frequently run into the N+1 problem, in which they populate domain objects via queries in loops. This causes terrible performance drags. There is a solution in plain PHP that makes the number of queries constant to increase performance overall. The talk shows typical PHP code involving the N+1 problem, then shows how to solve the problem in plain PHP (that is, without a framework or ORM), and includes editorializing about the origins of the N+1 problem in the developer mindset.","href":null,"attendee_count":10,"icon":null,"uri":"http:\/\/api.joind.in\/v2\/events\/894","verbose_uri":"http:\/\/api.joind.in\/v2\/events\/894?verbose=yes","comments_uri":"http:\/\/api.joind.in\/v2\/events\/894\/comments","talks_uri":"http:\/\/api.joind.in\/v2\/events\/894\/talks","website_uri":"http:\/\/joind.in\/event\/view\/894"},"6":{"name":"PHPBenelux February 2012 meeting @ WEBclusive","start_date":"2012-02-28T00:00:00+01:00","end_date":"2012-02-28T23:59:59+01:00","description":"Shortly after our conference we have been contacted by our friends at WEBclusive to organize a meeting for February.\n\nWe are still determining the program, and we will update this post accordingly as soon as we have the speakers confirmed. Keep the spot reserved in your agenda's, this evening will be a big blast!\n\nTuesday February 28th everybody is invited to visit WEBclusive office at the Rozengracht 133 in Amsterdam! They are sponsoring the venue, drinks and a speaker this evening. This promises to be a great PHP evening once again!","href":null,"attendee_count":13,"icon":null,"uri":"http:\/\/api.joind.in\/v2\/events\/885","verbose_uri":"http:\/\/api.joind.in\/v2\/events\/885?verbose=yes","comments_uri":"http:\/\/api.joind.in\/v2\/events\/885\/comments","talks_uri":"http:\/\/api.joind.in\/v2\/events\/885\/talks","website_uri":"http:\/\/joind.in\/event\/view\/885"},"meta":{"count":7,"this_page":"http:\/\/api.joind.in\/v2\/events?format=json&filter=hot&resultsperpage=7&start=0","next_page":"http:\/\/api.joind.in\/v2\/events?format=json&filter=hot&resultsperpage=7&start=7"}}
+{"0":{
+    "name":"PHPBenelux Conference 2012",
+    "start_date":"2012-01-27T00:00:00+01:00",
+    "end_date":"2012-01-28T23:59:59+01:00",
+    "description":"The conference and tutorials will take place at the Best Western Hotel Ter Elst in Antwerp (Belgium). Friday morning January 27th we have a set of tutorials. The conference is spread over 2 days: Friday afternoon (after the tutorials) and Saturday. Tutorials as well as the conference itself are spread over several parallel tracks.\n\nOn Friday evening, we\u2019re having the conference social. This will include drinks and bowling as we managed to reserve the entire bowling alley.",
+    "href":"http:\/\/conference.phpbenelux.eu",
+    "attendee_count":121,
+    "icon":"phpbnl2012-small.png",
+    "uri":"http:\/\/api.joind.in\/v2\/events\/782",
+    "verbose_uri":"http:\/\/api.joind.in\/v2\/events\/782?verbose=yes",
+    "comments_uri":"http:\/\/api.joind.in\/v2\/events\/782\/comments",
+    "talks_uri":"http:\/\/api.joind.in\/v2\/events\/782\/talks",
+    "website_uri":"http:\/\/joind.in\/event\/view\/782"
+}, "1":{
+    "name":"ConFoo 2012",
+    "start_date":"2012-02-27T00:00:00-05:00",
+    "end_date":"2012-03-02T23:59:59-05:00",
+    "description":"PHP Qu\u00e9bec, Montr\u00e9al-Python, Montreal.rb, Montreal Jug, W3Qc, OWASP Montr\u00e9al, Android Montreal, are proud to announce the third edition of the ConFoo Conference. From February 29th to March 2nd, 2012, international experts in Java, .Net, PHP, Python and Ruby will present solutions for developers and project managers the prestigious Hilton Bonaventure Hotel, located downtown Montr\u00e9al.\n",
+    "href":"http:\/\/confoo.ca\/",
+    "attendee_count":121,
+    "icon":"logo_confoo_joindin2.gif",
+    "uri":"http:\/\/api.joind.in\/v2\/events\/773",
+    "verbose_uri":"http:\/\/api.joind.in\/v2\/events\/773?verbose=yes",
+    "comments_uri":"http:\/\/api.joind.in\/v2\/events\/773\/comments",
+    "talks_uri":"http:\/\/api.joind.in\/v2\/events\/773\/talks",
+    "website_uri":"http:\/\/joind.in\/event\/view\/773"
+}, "2":{
+    "name":"PHP UK Conference 2012",
+    "start_date":"2012-02-24T00:00:00+00:00",
+    "end_date":"2012-02-25T23:59:59+00:00",
+    "description":"PHP London are pleased to announce their 7th annual UK PHP conference, building on the success of previous events by expanding to a double-day event, to accommodate the continual growth of the PHP community and PHP development industry.\n\n It takes place at the modern Business Design Centre in London's bustling Islington area, close to Kings Cross and Euston and just two minutes walk from Angel underground station. There are 16 one hour sessions that comprise the 3 track schedule for the day. As usual we've arranged social events for both the evening before and straight after each day of the event - the former being free to anyone to come along. The registration price also includes a buffet lunch and dessert, refreshments throughout each day, cloakroom facilities, wifi, countless networking opportunities, and a raffle.",
+    "href":"http:\/\/www.phpconference.co.uk\/",
+    "attendee_count":97,
+    "icon":"PHPUKConference2012.png",
+    "uri":"http:\/\/api.joind.in\/v2\/events\/824",
+    "verbose_uri":"http:\/\/api.joind.in\/v2\/events\/824?verbose=yes",
+    "comments_uri":"http:\/\/api.joind.in\/v2\/events\/824\/comments",
+    "talks_uri":"http:\/\/api.joind.in\/v2\/events\/824\/talks",
+    "website_uri":"http:\/\/joind.in\/event\/view\/824"
+}, "3":{
+    "name":"SACRAO 2012",
+    "start_date":"2012-02-11T00:00:00-05:00",
+    "end_date":"2012-02-15T23:59:59-05:00",
+    "description":"SACRAO 2012 Annual Conference - in Northern Kentucky! SACRAO has tracks and sessions for Admissions professionals, Registrar professionals, and other student affairs professionals.",
+    "href":"http:\/\/goo.gl\/5Bb0b",
+    "attendee_count":85,
+    "icon":"SACRAO_Logo.JPG",
+    "uri":"http:\/\/api.joind.in\/v2\/events\/667",
+    "verbose_uri":"http:\/\/api.joind.in\/v2\/events\/667?verbose=yes",
+    "comments_uri":"http:\/\/api.joind.in\/v2\/events\/667\/comments",
+    "talks_uri":"http:\/\/api.joind.in\/v2\/events\/667\/talks",
+    "website_uri":"http:\/\/joind.in\/event\/view\/667"
+}, "4":{
+    "name":"Day Camp 4 Developers #4: Business 101 for Developers",
+    "start_date":"2012-03-03T00:00:00-06:00",
+    "end_date":"2012-03-03T23:59:59-06:00",
+    "description":"Whether you are a freelancer, a moonlighter or a dedicated member of a team, your business skills come into play every day. Day Camp 4 Developers #4: Business 101 will help you hone those skills. Our 6 speakers will present from their real-life experiences as they help you sharpen your existing skills as well and learn new ones.\n",
+    "href":"",
+    "attendee_count":23,
+    "icon":"dc4d_joindin2.jpg",
+    "uri":"http:\/\/api.joind.in\/v2\/events\/899",
+    "verbose_uri":"http:\/\/api.joind.in\/v2\/events\/899?verbose=yes",
+    "comments_uri":"http:\/\/api.joind.in\/v2\/events\/899\/comments",
+    "talks_uri":"http:\/\/api.joind.in\/v2\/events\/899\/talks",
+    "website_uri":"http:\/\/joind.in\/event\/view\/899"
+}, "5":{
+    "name":"Dallas PHP User Group Meeting - February 2012",
+    "start_date":"2012-02-21T00:00:00-06:00",
+    "end_date":"2012-02-21T23:59:59-06:00",
+    "description":"This month we're going to have a special guest coming in from out of town - Paul Jones will be presenting his talk \"Solving the N+1 Problem; or, A Stitch In Time Saves Nine\". Here's the summary:\n\n-----------\n\nWhen dealing with databases, developers frequently run into the N+1 problem, in which they populate domain objects via queries in loops. This causes terrible performance drags. There is a solution in plain PHP that makes the number of queries constant to increase performance overall. The talk shows typical PHP code involving the N+1 problem, then shows how to solve the problem in plain PHP (that is, without a framework or ORM), and includes editorializing about the origins of the N+1 problem in the developer mindset.",
+    "href":null,
+    "attendee_count":10,
+    "icon":null,
+    "uri":"http:\/\/api.joind.in\/v2\/events\/894",
+    "verbose_uri":"http:\/\/api.joind.in\/v2\/events\/894?verbose=yes",
+    "comments_uri":"http:\/\/api.joind.in\/v2\/events\/894\/comments",
+    "talks_uri":"http:\/\/api.joind.in\/v2\/events\/894\/talks",
+    "website_uri":"http:\/\/joind.in\/event\/view\/894"
+}, "6":{
+    "name":"PHPBenelux February 2012 meeting @ WEBclusive",
+    "start_date":"2012-02-28T00:00:00+01:00",
+    "end_date":"2012-02-28T23:59:59+01:00",
+    "description":"Shortly after our conference we have been contacted by our friends at WEBclusive to organize a meeting for February.\n\nWe are still determining the program, and we will update this post accordingly as soon as we have the speakers confirmed. Keep the spot reserved in your agenda's, this evening will be a big blast!\n\nTuesday February 28th everybody is invited to visit WEBclusive office at the Rozengracht 133 in Amsterdam! They are sponsoring the venue, drinks and a speaker this evening. This promises to be a great PHP evening once again!",
+    "href":null,
+    "attendee_count":13,
+    "icon":null,
+    "uri":"http:\/\/api.joind.in\/v2\/events\/885",
+    "verbose_uri":"http:\/\/api.joind.in\/v2\/events\/885?verbose=yes",
+    "comments_uri":"http:\/\/api.joind.in\/v2\/events\/885\/comments",
+    "talks_uri":"http:\/\/api.joind.in\/v2\/events\/885\/talks",
+    "website_uri":"http:\/\/joind.in\/event\/view\/885"
+}, "meta":{
+    "count":7,
+    "this_page":"http:\/\/api.joind.in\/v2\/events?format=json&filter=hot&resultsperpage=7&start=0",
+    "next_page":"http:\/\/api.joind.in\/v2\/events?format=json&filter=hot&resultsperpage=7&start=7"
+}}
