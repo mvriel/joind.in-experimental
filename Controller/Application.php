@@ -9,6 +9,7 @@ class Application extends Base
     protected function defineRoutes(\Slim $app)
     {
         $app->get('/', array($this, 'index'));
+        $app->get('/oauth/callback', array($this, 'oauth_callback'));
     }
 
     public function index()
@@ -24,5 +25,11 @@ class Application extends Base
                 'upcoming_events' => $upcoming_events
             )
         );
+    }
+
+    public function oauth_callback()
+    {
+        $_SESSION['access_token'] = $this->application->request()->params('access_token');
+        $this->application->redirect('/');
     }
 }

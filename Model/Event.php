@@ -23,11 +23,14 @@ class Event
 {
     public function load($id)
     {
-        $event = current((array)json_decode(
+        $event = current(current((array)json_decode(
             file_get_contents(
-                '../Cache/event.'.$id.'.json'
-//                'http://api.joind.in/v2/events/'.$id.'?format=json&verbose=yes'
+//                '../Cache/event.'.$id.'.json'
+                'http://api.joind.in/v2.1/events/'.$id.'?format=json&verbose=yes'
             ))
+        ));
+        $event->comments = current((array)json_decode(
+            file_get_contents($event->comments_uri))
         );
 
         // import properties

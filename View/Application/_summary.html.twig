@@ -4,17 +4,20 @@
             <img src="{{ event.icon|img_path("event_icons") }}" alt="{{ event.name }}" />
         </a>
     </div>
-    <div class="span3">
+    <div class="span4">
         <h3><a href="{{ event.website_uri }}">{{ event.name }}</a></h3>
 
-        <p class="info"><strong>{{ event.start_date|format_date }}</strong> until
-            <strong>{{ event.end_date|format_date }}</strong>
+        <p class="info">
+            <strong>{{ event.start_date|format_date }}</strong> until
+            <strong>{{ event.end_date|format_date }}</strong><br />
+            {{ event.location }}
         </p>
-
-        <div class="links">
-            <a href=""><i class="icon-calendar"></i> 16</a>
-            <a href=""><i class="icon-comment"></i> 24</a>
-            <a href=""><i class="icon-user"></i> 100</a>
-        </div>
+    </div>
+    <div class="span1 links">
+        <table>
+            <tr><td><i class="icon-calendar"></i></td><td><a>16</a></td></tr>
+            <tr><td><i class="icon-comment"></i></td><td><a>24</a></td></tr>
+            <tr><td><i class="icon-user"></i></td><td><a>{{ event.attendee_count }}</a></td></tr>
+        </table>
     </div>
 </div>
