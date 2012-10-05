@@ -1,50 +1,67 @@
 <?php
 namespace Joindin\Controller;
-require_once 'Base.php';
-require_once '../Model/Collection/Event.php';
+require_once __DIR__ .'/Base.php';
+require_once __DIR__ .'/../Model/Collection/Event.php';
+require_once __DIR__ .'/../Model/Event.php';
 
 class Event extends Base
 {
     protected function defineRoutes(\Slim $app)
     {
-        $app->get('/', array($this, 'hot'));
+        $app->get('/events', array($this, 'index'));
+        $app->get('/events/:id', array($this, 'show'));
+        $app->get('/events/:id/schedule', array($this, 'schedule'));
+        $app->get('/events/:id/comments', array($this, 'comments'));
+        $app->get('/events/:id/attendees', array($this, 'attendees'));
+        $app->get('/events/submit', array($this, 'create'));
+        $app->get('/events/:id/edit', array($this, 'edit'));
+        $app->get('/events/:id/delete', array($this, 'delete'));
     }
 
-    public function hot()
+    public function index()
     {
-        $event_collection = new \Joindin\Model\Collection\Event();
-        $hot_events      = $event_collection->retrieve('hot', 5);
-        $upcoming_events = $event_collection->retrieve('upcoming', 5);
-        $this->prepareEventData($hot_events);
-        $this->prepareEventData($upcoming_events);
+
+    }
+
+    public function show($id)
+    {
+        $event = new \Joindin\Model\Event();
+        $event->load($id);
 
         echo $this->application->render(
-            'events/hot.html.twig',
-            array(
-                'hot_events'      => $hot_events,
-                'upcoming_events' => $upcoming_events
-            )
+            'Event/show.html.twig',
+            array('event' => $event)
         );
     }
 
-    /**
-     * Converts the start and end date of events to a human readable format.
-     *
-     * @param array $events
-     *
-     * @return void
-     */
-    protected function prepareEventData(array $events)
+    public function schedule($id)
     {
-        array_walk($events, function(&$v) {
-            if (!$v->icon) {
-                $v->icon = '/img/logos/none.gif';
-            } else {
-                $v->icon = 'http://joind.in/inc/img/event_icons/'.$v->icon;
-            }
 
-            $v->start_date = date('D M dS Y', strtotime($v->start_date));
-            $v->end_date = date('D M dS Y', strtotime($v->end_date));
-        });
     }
+
+    public function comments($id)
+    {
+
+    }
+
+    public function attendees($id)
+    {
+
+    }
+
+    public function create()
+    {
+
+    }
+
+    public function edit($id)
+    {
+
+    }
+
+    public function delete($id)
+    {
+
+    }
+
 }

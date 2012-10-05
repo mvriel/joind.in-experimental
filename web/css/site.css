@@ -62,7 +62,17 @@ h2 i {
 }
 
 .event-summary {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    height: 80px;
+    border-bottom: 1px solid #ddd;
+}
+
+.event-summary h3
+{
+    white-space:   nowrap;
+    width:         100%;
+    overflow:      hidden;
+    text-overflow: ellipsis;
 }
 
 .event-summary .links {
@@ -70,7 +80,8 @@ h2 i {
 }
 
 .event-summary .links a {
-    color: silver;
+    width: 50px;
+    display: inline-block;
 }
 
 .event-summary:hover {
@@ -83,18 +94,18 @@ h2 i {
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
-    .event-summary .span1 {
+
+}
+
+/* Landscape phone to portrait tablet*/
+@media (max-width: 768px) {
+    .event-summary .span1, .row.event.show .logo {
         text-align: center;
     }
 
     .row h2, .row h3 {
        text-align: center;
     }
-}
-
-/* Landscape phone to portrait tablet*/
-@media (max-width: 768px) {
-
 }
 
 /* Portrait tablet to landscape and desktop*/

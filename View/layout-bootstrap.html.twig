@@ -11,10 +11,16 @@
     <link href="/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="/css/site.css" rel="stylesheet">
 
+    {#<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>#}
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.js"></script>
+    <script src="/js/site.js"></script>
+
     <!--[if lt IE 9]>
     <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
+    {% block extra_headers %}{% endblock %}
     <link rel="shortcut icon" href="/images/favicon.ico">
     {#<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">#}
     {#<link rel="apple-touch-icon" sizes="72x72" href="/images/apple-touch-icon-72x72.png">#}
@@ -54,6 +60,7 @@
 
 <div class="container" id="ctn">
 
+    {% block page_header %}
     <div class="row">
         <div class="span12">
             <div id="carousel" class="carousel">
@@ -84,14 +91,10 @@
             </div>
         </div>
     </div>
+    {% endblock %}
 
     {% block body %}{% endblock %}
 </div>
-
-{#<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>#}
-<script src="/js/jquery.min.js"></script>
-<script src="/js/bootstrap.js"></script>
-<script src="/js/site.js"></script>
 
 </body>
 </html>

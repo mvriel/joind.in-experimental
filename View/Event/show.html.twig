@@ -1,0 +1,85 @@
+{% extends '/layout-bootstrap.html.twig' %}
+
+{% block extra_headers %}
+    <script type="text/javascript" src="/js/ulayers.js"></script>
+    <script type="text/javascript">
+        // <![CDATA[
+        var map;
+
+        $(document).ready(function(){
+            map = new uLayers.Map('map', uLayers.OSM);
+            map.setOrigin({lat: {{ event.latitude }}, lon: {{ event.longitude }} }, 17);
+            map.addMarker({lat: {{ event.latitude }}, lon: {{ event.longitude }} });
+        });
+        // ]]>
+    </script>
+{% endblock %}
+
+{% block page_header %}{% endblock %}
+
+{% block body %}
+<div class="row event show">
+    <div class="span1 logo">
+        <img src="{{ event.icon|img_path("event_icons") }}" alt="{{ event.name }}" />
+    </div>
+
+    <div class="span8">
+        <h1>{{ event.name }} <span class="label label-warning">#mdevcon</span></h1>
+        {{ event.href|link }}
+        <p>{{ event.description }}</p>
+
+        <span class="label">tag1</span>
+        <span class="label">tag2</span>
+        <span class="label">tag3</span>
+
+    </div>
+    <div class="span3">
+        <ul class="nav nav-pills nav-stacked">
+            <li class="active"><a href="">Event information</a></li>
+            <li><a href="">Schedule</a></li>
+            <li><a href="">Comments</a></li>
+            <li><a href="">Attendees</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="row">
+    <div class="span8 offset1">
+        <h2>When and where</h2>
+
+        <p>
+            From <b>{{ event.start_date|format_date}}</b> until
+            <b>{{ event.end_date|format_date}}</b> at <b>{{ event.location }}</b>
+        </p>
+        <div id="map" style="border: 1px solid black; width: 100%; height: 300px;"></div>
+
+        <h2>Your hosts</h2>
+
+    </div>
+    <div class="span3">
+        <h2>Call for papers</h2>
+        <table class="table">
+            <tr><th>Starts</th><td>{{event.cfp_start_date|format_date}}</td></tr>
+            <tr><th>Ends</th><td>{{event.cfp_end_date|format_date}}</td></tr>
+            <tr><td colspan="2" style="text-align: right">{{event.cfp_url|link("More information")}}</td></tr>
+        </table>
+    </div>
+
+</div>
+{% endblock %}
+
+{#
+Presented information:
+        -Name
+        Slug
+        -Description
+        -Hosts
+        -Hashtag
+        -tags
+        -URL
+        -CFP
+        ?Event hyperlink
+        -Logo icon
+        -Address information + Map
+        Attending status
+#}

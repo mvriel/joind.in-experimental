@@ -1,0 +1,40 @@
+{% extends '/layout-bootstrap.html.twig' %}
+
+{% block body %}
+<div class="row">
+    <div class="span12">
+        <p class="blurb well">
+            Welcome to Joind.in! This is the site where event attendees can leave
+            feedback on an event and its sessions.<br/>
+            Do you have an opinion? Then <a href="/user/register">register an account</a>
+            and share it!
+        </p>
+    </div>
+</div>
+
+<div class="row highlights">
+    <div class="span4">
+        <div>
+            <h2><i class="icon-calendar"></i> Upcoming events</h2>
+            {% for event in upcoming_events %}
+            {% include 'Application/_summary.html.twig' %}
+            {% endfor %}
+        </div>
+    </div>
+    <div class="span4">
+        <div>
+            <h2><i class="icon-fire"></i> Hot events</h2>
+            {% for event in hot_events %}
+            {% include 'Application/_summary.html.twig' %}
+            {% endfor %}
+        </div>
+    </div>
+    <div class="span4">
+        <div>
+            <h2><i class="icon-fire"></i> Popular talks</h2>
+            {% include 'Talk/_summary.html.twig' %}
+        </div>
+    </div>
+</div>
+
+{% endblock %}

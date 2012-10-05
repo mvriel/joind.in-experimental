@@ -15,4 +15,5 @@ class Event
 
         return $events;
     }
+
 }
