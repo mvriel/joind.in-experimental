@@ -1,0 +1,44 @@
+{"events":[
+    {
+        "name":"Mdevcon",
+        "start_date":"2012-03-09T23:00:00+01:00",
+        "end_date":"2012-03-10T22:59:59+01:00",
+        "description":"Developers working with mobile technology. There will be talks targeted at a specific platform and talks of a more platform independent nature. We welcome independent developers, freelancers and developers working for a company \u2013 It doesn\u2019t matter who you are or where you work, if you work with mobile technology you\u2019ll enjoy this conference.",
+        "href":"http:\/\/mdevcon.com",
+        "icon":"mdevcon-avatar_90.png",
+        "latitude":52.3702157,
+        "longitude":4.8951678999999,
+        "tz_continent":"Europe",
+        "tz_place":"Amsterdam",
+        "location":"Tuschinski theatre, Appsterdam",
+        "hashtag":"mobile,iphone,ios,android,development,developers",
+        "attendee_count":16,
+        "attending":false,
+        "comments_enabled":0,
+        "event_comments_count":0,
+        "cfp_start_date":"2011-11-30T00:00:00+01:00",
+        "cfp_end_date":"2012-01-10T00:00:00+01:00",
+        "cfp_url":"http:\/\/mdevcon.com\/2011\/12\/06\/call-for-papers\/",
+        "tags":[],
+        "uri":"http:\/\/api.joind.in\/v2.1\/events\/851",
+        "verbose_uri":"http:\/\/api.joind.in\/v2.1\/events\/851?verbose=yes",
+        "comments_uri":"http:\/\/api.joind.in\/v2.1\/events\/851\/comments",
+        "talks_uri":"http:\/\/api.joind.in\/v2.1\/events\/851\/talks",
+        "website_uri":"http:\/\/joind.in\/event\/view\/851",
+        "humane_website_uri":"http:\/\/joind.in\/event\/mdevcon12",
+        "all_talk_comments_uri":"http:\/\/api.joind.in\/v2.1\/events\/851\/talk_comments",
+        "hosts":[
+            {
+                "host_name":"Ivo Jansch",
+                "host_uri":"http:\/\/api.joind.in\/v2.1\/users\/21"
+            },
+            {
+                "host_name":"Felix De Vliegher",
+                "host_uri":"http:\/\/api.joind.in\/v2.1\/users\/33"
+            }
+        ]
+    }
+], "meta":{
+    "count":1,
+    "this_page":"http:\/\/api.joind.in\/v2.1\/events\/851?verbose=yes&format=json&resultsperpage=20&start=0"
+}}

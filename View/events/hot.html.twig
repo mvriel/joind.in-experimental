@@ -1,385 +1,42 @@
-{% extends '/layout.html.twig' %}
+{% extends '/layout-bootstrap.html.twig' %}
 
 {% block body %}
-<div class="box">
-    <p>Welcome to joind.in! This is the site where event attendees can leave feedback on an event and its sessions. Do you have an opinion? Then
-        <a href="/user/register">register an account</a> and share it!</p>
-</div>
-
-<div class="box">
-    <h2 class="h1 icon-event">Hot Events
-        <a class="more" href="/event/hot">More &raquo;</a></h2>
-{% for event in events %}
-    <div class="row row-event">
-        <div class="img">
-            <div class="frame">
-                <a href="{{ event.website_uri }}">
-                    <img src="http://joind.in/inc/img/event_icons/{{ event.icon }}" alt="{{ event.name }}" height="90" width="90" />
-                </a>
-            </div>
-        </div>
-        <div class="text">
-            <h3><a href="{{ event.website_uri }}">{{ event.name }}</a></h3>
-
-            <p class="info"><strong>{{ event.start_date }}</strong> -
-                <strong>{{ event.end_date }}</strong> at
-                <strong>---</strong>
-            </p>
-
-            <div class="desc"><p>{{ event.description }}</p></div>
-            <p class="opts">
-                <a href="{{ event.website_uri}}/comments">?</a> |
-                <strong><span class="event-attend-count-782">?</span> attended</strong> |
-            </p>
-
-            <div class="desc" style="padding-top:6px"></div>
-        </div>
-        <div class="clear"></div>
-    </div>
-{% endfor %}
-
-
-    <div class="row row-event">
-        <div class="img">
-            <div class="frame">
-                <a href="/event/view/782"><img src="/inc/img/event_icons/phpbnl2012-small.png" alt="PHPBenelux Conference 2012" height="90" width="90" /></a>
-            </div>
-        </div>
-        <div class="text">
-            <h3><a href="/event/view/782">PHPBenelux Conference 2012</a></h3>
-
-            <p class="info"><strong>27.Jan.2012</strong> -
-                <strong>28.Jan.2012</strong> at
-                <strong>Best Western Ter Elst</strong>
-            </p>
-
-            <div class="desc">
-                <p>The conference and tutorials will take place at the Best Western Hotel Ter Elst in Antwerp (Belgium). Friday morning January&#8230;</p>
-            </div>
-            <p class="opts">
-                <a href="/event/view/782#comments">21 comments</a> |
-                <strong><span class="event-attend-count-782">121</span> attended</strong> |
-
-                <!--<input type="checkbox" name="attend" value="1"/> Attending?-->
-
-                <a class="btn-small" href="#" onclick="markAttending(this,782,true);return false;">I attended</a>
-            </p>
-
-            <div class="desc" style="padding-top:6px"></div>
-        </div>
-        <div class="clear"></div>
-    </div>
-
-
-    <div class="row row-event">
-        <div class="img">
-            <div class="frame">
-                <a href="/event/view/773"><img src="/inc/img/event_icons/logo_confoo_joindin2.gif" alt="ConFoo 2012" height="90" width="90" /></a>
-            </div>
-        </div>
-        <div class="text">
-            <h3><a href="/event/view/773">ConFoo 2012</a></h3>
-
-            <p class="info"><strong>27.Feb.2012</strong> -
-                <strong>02.Mar.2012</strong> at
-                <strong>Hilton Montreal Bonaventure Hotel</strong>
-            </p>
-
-            <div class="desc">
-                <p>PHP Québec, Montréal-Python, Montreal.rb, Montreal Jug, W3Qc, OWASP Montréal, Android Montreal, are proud to announce the third edition of the&#8230;</p>
-                <b>tagged</b> <a href="/event/tag/database">database</a>,
-                <a href="/event/tag/html">html</a>,
-                <a href="/event/tag/java">java</a>,
-                <a href="/event/tag/javascript">javascript</a>,
-                <a href="/event/tag/montreal">montreal</a>,
-                <a href="/event/tag/mysql">mysql</a>,
-                <a href="/event/tag/php">php</a>,
-                <a href="/event/tag/python">python</a>,
-                <a href="/event/tag/ruby">ruby</a></div>
-            <p class="opts">
-                <a href="/event/view/773#comments">1 comment</a> |
-                <strong><span class="event-attend-count-773">117</span> attended</strong> |
-
-                <!--<input type="checkbox" name="attend" value="1"/> Attending?-->
-
-                <a class="btn-small" href="#" onclick="markAttending(this,773,true);return false;">I attended</a>
-            </p>
-
-            <div class="desc" style="padding-top:6px"></div>
-        </div>
-        <div class="clear"></div>
-    </div>
-    <div class="row row-event">
-        <div class="img">
-            <div class="frame">
-                <a href="/event/view/824"><img src="/inc/img/event_icons/PHPUKConference2012.png" alt="PHP UK Conference 2012" height="90" width="90" /></a>
-            </div>
-        </div>
-        <div class="text">
-            <h3><a href="/event/view/824">PHP UK Conference 2012</a></h3>
-
-            <p class="info"><strong>24.Feb.2012</strong> -
-                <strong>25.Feb.2012</strong> at
-                <strong>Business Design Center</strong>
-            </p>
-
-            <div class="desc">
-                <p>PHP London are pleased to announce their 7th annual UK PHP conference, building on the success of previous events by&#8230;</p>
-                <b>tagged</b> <a href="/event/tag/php">php</a></div>
-            <p class="opts">
-                <a href="/event/view/824#comments">8 comments</a> |
-                <strong><span class="event-attend-count-824">95</span> attended</strong> |
-
-                <!--<input type="checkbox" name="attend" value="1"/> Attending?-->
-
-                <a class="btn-small" href="#" onclick="markAttending(this,824,true);return false;">I attended</a>
-            </p>
-
-            <div class="desc" style="padding-top:6px"></div>
-        </div>
-        <div class="clear"></div>
-    </div>
-    <div class="row row-event">
-        <div class="img">
-            <div class="frame">
-                <a href="/event/view/667"><img src="/inc/img/event_icons/SACRAO_Logo.JPG" alt="SACRAO 2012" height="90" width="90" /></a>
-            </div>
-        </div>
-        <div class="text">
-            <h3><a href="/event/view/667">SACRAO 2012</a></h3>
-
-            <p class="info"><strong>11.Feb.2012</strong> -
-                <strong>15.Feb.2012</strong> at
-                <strong>Northern Kentucky Convention Center</strong>
-            </p>
-
-            <div class="desc">
-                <p>SACRAO 2012 Annual Conference - in Northern Kentucky! SACRAO has tracks and sessions for Admissions professionals, Registrar professionals, and other&#8230;</p>
-                <b>tagged</b> <a href="/event/tag/admissions">admissions</a>,
-                <a href="/event/tag/colleges">colleges</a>,
-                <a href="/event/tag/registrar">registrar</a>,
-                <a href="/event/tag/sacrao">sacrao</a>,
-                <a href="/event/tag/universities">universities</a></div>
-            <p class="opts">
-                <a href="/event/view/667#comments">0 comments</a> |
-                <strong><span class="event-attend-count-667">85</span> attended</strong> |
-
-                <!--<input type="checkbox" name="attend" value="1"/> Attending?-->
-
-                <a class="btn-small" href="#" onclick="markAttending(this,667,true);return false;">I attended</a>
-            </p>
-
-            <div class="desc" style="padding-top:6px"></div>
-        </div>
-        <div class="clear"></div>
-    </div>
-    <div class="row row-event">
-        <div class="img">
-            <div class="frame">
-                <a href="/event/view/899"><img src="/inc/img/event_icons/dc4d_joindin2.jpg" alt="Day Camp 4 Developers #4: Business 101 for Developers" height="90" width="90" /></a>
-            </div>
-        </div>
-        <div class="text">
-            <h3>
-                <a href="/event/view/899">Day Camp 4 Developers #4: Business 101 for Developers</a>
-            </h3>
-
-            <p class="info"><strong>03.Mar.2012</strong>
-            </p>
-
-            <div class="desc">
-                <p>Whether you are a freelancer, a moonlighter or a dedicated member of a team, your business skills come into play&#8230;</p>
-            </div>
-            <p class="opts">
-                <a href="/event/view/899#comments">10 comments</a> |
-                <strong><span class="event-attend-count-899">22</span> attended</strong> |
-
-                <!--<input type="checkbox" name="attend" value="1"/> Attending?-->
-
-                <a class="btn-small" href="#" onclick="markAttending(this,899,true);return false;">I attended</a>
-            </p>
-
-            <div class="desc" style="padding-top:6px"></div>
-        </div>
-        <div class="clear"></div>
-    </div>
-    <div class="row row-event">
-        <div class="img">
-            <div class="frame">
-                <a href="/event/view/894"><img src="/inc/img/event_icons/none.gif" alt="Dallas PHP User Group Meeting - February 2012" height="90" width="90" /></a>
-            </div>
-        </div>
-        <div class="text">
-            <h3>
-                <a href="/event/view/894">Dallas PHP User Group Meeting - February 2012</a>
-            </h3>
-
-            <p class="info"><strong>21.Feb.2012</strong>
-            </p>
-
-            <div class="desc">
-                <p>This month we're going to have a special guest coming in from out of town - Paul Jones will be&#8230;</p>
-            </div>
-            <p class="opts">
-                <a href="/event/view/894#comments">8 comments</a> |
-                <strong><span class="event-attend-count-894">10</span> attended</strong> |
-
-                <!--<input type="checkbox" name="attend" value="1"/> Attending?-->
-
-                <a class="btn-small" href="#" onclick="markAttending(this,894,true);return false;">I attended</a>
-            </p>
-
-            <div class="desc" style="padding-top:6px"></div>
-        </div>
-        <div class="clear"></div>
-    </div>
-    <div class="row row-event">
-        <div class="img">
-            <div class="frame">
-                <a href="/event/view/885"><img src="/inc/img/event_icons/none.gif" alt="PHPBenelux February 2012 meeting @ WEBclusive" height="90" width="90" /></a>
-            </div>
-        </div>
-        <div class="text">
-            <h3>
-                <a href="/event/view/885">PHPBenelux February 2012 meeting @ WEBclusive</a>
-            </h3>
-
-            <p class="info"><strong>28.Feb.2012</strong>
-            </p>
-
-            <div class="desc">
-                <p>Shortly after our conference we have been contacted by our friends at WEBclusive to organize a meeting for February.</p>
-
-                <p>We&#8230;</p>
-            </div>
-            <p class="opts">
-                <a href="/event/view/885#comments">1 comment</a> |
-                <strong><span class="event-attend-count-885">13</span> attended</strong> |
-
-                <!--<input type="checkbox" name="attend" value="1"/> Attending?-->
-
-                <a class="btn-small" href="#" onclick="markAttending(this,885,true);return false;">I attended</a>
-            </p>
-
-            <div class="desc" style="padding-top:6px"></div>
-        </div>
-        <div class="clear"></div>
+<div class="row">
+    <div class="span12">
+        <p class="blurb well">
+            Welcome to Joind.in! This is the site where event attendees can leave
+            feedback on an event and its sessions.<br/>
+            Do you have an opinion? Then <a href="/user/register">register an account</a>
+            and share it!
+        </p>
     </div>
 </div>
 
-<div class="box">
-    <h2 class="h1 icon-talk">Popular Talks</h2>
-
-    <div class="row row-talk">
-        <div class="img">
-            <img class="rating rating-5" src="/inc/img/rating-5.gif" alt="Rating: 5 of 5" height="21" width="117" />
+<div class="row highlights">
+    <div class="span4">
+        <div>
+            <h2><i class="icon-calendar"></i> Upcoming events</h2>
+            {% for event in upcoming_events %}
+            {% include 'events/_summary.html.twig' %}
+            {% endfor %}
         </div>
-        <div class="text">
-            <h3>
-                <a href="/talk/view/3582">How to Stand on the Shoulders of Giants</a>
-            </h3>
-
-            <p class="opts">
-                at <a href="/event/view/677">PHP North West 2011</a> |
-                <a href="/talk/view/3582#comments">65 comments</a> |
-                <a href="/user/view/291">Ian Barber</a></p>
-        </div>
-        <div class="clear"></div>
     </div>
-    <div class="row row-talk">
-        <div class="img">
-            <img class="rating rating-5" src="/inc/img/rating-5.gif" alt="Rating: 5 of 5" height="21" width="117" />
+    <div class="span4">
+        <div>
+            <h2><i class="icon-fire"></i> Hot events</h2>
+            {% for event in hot_events %}
+            {% include 'events/_summary.html.twig' %}
+            {% endfor %}
         </div>
-        <div class="text">
-            <h3><a href="/talk/view/3375">Making the new everyday things </a>
-            </h3>
-
-            <p class="opts">
-                at <a href="/event/view/603">Dutch PHP Conference 2011</a> |
-                <a href="/talk/view/3375#comments">57 comments</a> |
-                <a href="/user/view/14307">Aral Balkan</a></p>
-        </div>
-        <div class="clear"></div>
     </div>
-    <div class="row row-talk">
-        <div class="img">
-            <img class="rating rating-4" src="/inc/img/rating-4.gif" alt="Rating: 4 of 5" height="21" width="117" />
+    <div class="span4">
+        <div>
+            <h2><i class="icon-fire"></i> Popular talks</h2>
+            {% include 'Talks/_summary.html.twig' %}
         </div>
-        <div class="text">
-            <h3>
-                <a href="/talk/view/2637">M2.05 - A Day at Disney - Customer Service from the Back Lot</a>
-            </h3>
-
-            <p class="opts">
-                at <a href="/event/view/565">SACRAO 2011</a> |
-                <a href="/talk/view/2637#comments">51 comments</a> | Bobbye Fry
-            </p>
-        </div>
-        <div class="clear"></div>
-    </div>
-    <div class="row row-talk">
-        <div class="img">
-            <img class="rating rating-5" src="/inc/img/rating-5.gif" alt="Rating: 5 of 5" height="21" width="117" />
-        </div>
-        <div class="text">
-            <h3>
-                <a href="/talk/view/1533">97 Things Every Programmer Should Know</a>
-            </h3>
-
-            <p class="opts">
-                at <a href="/event/view/142">Dutch PHP Conference 2010</a> |
-                <a href="/talk/view/1533#comments">46 comments</a> | Kevlin Henney
-            </p>
-        </div>
-        <div class="clear"></div>
-    </div>
-    <div class="row row-talk">
-        <div class="img">
-            <img class="rating rating-5" src="/inc/img/rating-5.gif" alt="Rating: 5 of 5" height="21" width="117" />
-        </div>
-        <div class="text">
-            <h3><a href="/talk/view/4778">Taking it to the next level</a></h3>
-
-            <p class="opts">
-                at <a href="/event/view/782">PHPBenelux Conference 2012</a> |
-                <a href="/talk/view/4778#comments">45 comments</a> |
-                <a href="/user/view/203">David Coallier</a></p>
-        </div>
-        <div class="clear"></div>
-    </div>
-    <div class="row row-talk">
-        <div class="img">
-            <img class="rating rating-5" src="/inc/img/rating-5.gif" alt="Rating: 5 of 5" height="21" width="117" />
-        </div>
-        <div class="text">
-            <h3>
-                <a href="/talk/view/2049">Teach a Man to Fish: Coaching Development Teams</a>
-            </h3>
-
-            <p class="opts">
-                at <a href="/event/view/388">PHP North West 2010 (PHPNW10)</a> |
-                <a href="/talk/view/2049#comments">44 comments</a> |
-                <a href="/user/view/110">Lorna Mitchell</a></p>
-        </div>
-        <div class="clear"></div>
-    </div>
-    <div class="row row-talk">
-        <div class="img">
-            <img class="rating rating-5" src="/inc/img/rating-5.gif" alt="Rating: 5 of 5" height="21" width="117" />
-        </div>
-        <div class="text">
-            <h3>
-                <a href="/talk/view/2650">M3.07 - The IT Razor: What's New on the Bleeding Edge</a>
-            </h3>
-
-            <p class="opts">
-                at <a href="/event/view/565">SACRAO 2011</a> |
-                <a href="/talk/view/2650#comments">44 comments</a> |
-                <a href="/user/view/10018">D. Scott Dittman</a></p>
-        </div>
-        <div class="clear"></div>
     </div>
 </div>
+
 {% endblock %}
 
 {% block sidebar %}
